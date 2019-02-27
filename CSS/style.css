@@ -8,6 +8,8 @@ div {
     border: 1px solid red;
 }
 
+body { min-width: 780px; text-align: center; }
+
 /*Header*/
 
 header{
@@ -52,40 +54,42 @@ header{
     
   .products {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    height: 600px;
+    background-color: #D8D8D8;
   }
   
   .product {
     width: 60%;
+    height: 60%;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+    margin-right: 24px;
   }
   
   .product-image {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    height: 9rem;
-    padding: 2rem 0;
+ 
  }
   
   .product-image img {
     max-width: 100%;
   }
-  
-  .description {
-    display: block;
-    padding: 0.5rem;
-    background-color: black;
-    text-align: center;
-    color: white;
-  }
-  
-  .info {
-    width: 35%;
-  }
-  
-  .info .title {
-    display: block;
-    padding: 1rem 2rem;
-    background-color: black;
-    color: white;
-  }
+
+  .description {    
+    width: 40%;
+    height: 40%;
+    text-align: left;
+}
+
+.description a {
+  background-color: #4A4A4A;
+  padding: 8px 20px 8px 20px;
+  color: #D8D8D8;
+
+}
+
+}

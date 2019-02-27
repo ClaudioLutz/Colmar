@@ -67,12 +67,12 @@ header{
     overflow: hidden;
   }
   
-
   .description {    
     width: 40%;
     height: 40%;
     text-align: left;
-    min-width: 40%;
+    min-width: 40%;    
+    margin-top: 32px;
 }
 
 .description a {
@@ -81,5 +81,40 @@ header{
   color: #D8D8D8;
 
 }
+
+/*Second Banner*/
+
+.secondbanner {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  width: 100%;  
+}
+
+.smalldescriptions{
+  display: block;
+  width: 40%;  
+}
+
+.smalldescription {    
+  display: flex;
+  align-items: center;
+  
+  height: 30%;
+  overflow: hidden;    
+  margin-top: 32px;    
+}
+
+.smallimages{
+  display: flex;
+  align-items: center;
+  width: 35%;
+  
+}
+
+
+.smalltext {
+  width: 65%;
+  text-align: left;
 
 }

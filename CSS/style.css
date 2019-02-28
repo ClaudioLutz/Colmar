@@ -143,3 +143,9 @@ header{
 }
 
 /*Last Banner*/
+
+.lastbanner {
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+}

@@ -87,7 +87,6 @@ header{
 .secondbanner {
   display: flex;
   justify-content: center;
-  height: 600px;
   width: 100%;  
 }
 
@@ -98,8 +97,7 @@ header{
 
 .smalldescription {    
   display: flex;
-  align-items: center;
-  
+  align-items: center; 
   height: 30%;
   overflow: hidden;    
   margin-top: 32px;    
@@ -108,13 +106,40 @@ header{
 .smallimages{
   display: flex;
   align-items: center;
-  width: 35%;
-  
+  width: 35%;  
 }
 
 
 .smalltext {
   width: 65%;
   text-align: left;
-
 }
+
+.banner{
+  display: block;
+}
+
+/*Third Banner*/
+
+.thirdbanner {
+  margin: 32px 74px 32px 74px;
+  background-color: #D8D8D8;
+  width: 100%;
+}
+
+.container {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+}
+
+.middleimages {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+/*Last Banner*/

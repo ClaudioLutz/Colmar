@@ -4,6 +4,7 @@ html{
     padding-top:0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+
 }
 
 h1{
@@ -13,6 +14,7 @@ h1{
 
 h2{
 font-weight: bold;
+font-size: 2rem;
 }
 
 
@@ -78,17 +80,20 @@ header{
     background-color: #D8D8D8;
   }
 
+
   .banner {
     width: 60%;
-    padding: 2rem 1.5rem 2rem 1.5rem;
+    margin: 2rem 1.5rem 2rem 1.5rem;
     display: table-cell;
     vertical-align: middle;    
   }
- 
+
+  .largeimage1 {
+    border: 2px solid red;
+  }
+  
   .banner img {
-    width: 100%;
-    display: flex;
-    flex: 1;
+    max-width: 100%;
   }
 
   .largetext {
@@ -97,7 +102,7 @@ header{
   }  
 
 
-  .largebutton{
+  .button1{
     background-color: #4A4A4A;
     color: #D8D8D8;
     padding: 0.5rem 6rem;
@@ -131,8 +136,10 @@ header{
 }
 
 .smalldescriptions{
-  display: block;
   width: 40%;  
+  margin: 2rem 1.5rem 2rem 0;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 /*.secondbanner .smalldescriptions:nth-child(1){
@@ -142,27 +149,28 @@ header{
 .smalldescription {    
   display: flex;
   align-items: center; 
-  height: 30%;
-  overflow: hidden;    
-  margin-top: 32px;    
+  margin: 0 2rem 1rem 1rem;
 }
 
 .smallimages{
   display: flex;
   align-items: center;
   width: 35%;  
+  
+  background-size: cover;
 }
 
 .smallimages img{
   display: flex;
-  align-items: center;
   width: 100%;  
+  
 }
 
 .smalltext {
   width: 65%;
   text-align: left;
-  
+  margin-left: 2rem;
+    
 }
 
 
@@ -176,6 +184,7 @@ header{
 
 .thirdbanner h1 {
   text-align: center;
+  padding-top: 2rem;
 }
 
 
@@ -192,16 +201,22 @@ header{
 .middleimages {
   display: flex;
   flex-direction: column;
+  
   max-width: 30%;
   flex-basis: 100%;
   flex: 1;
-  margin-right: 2rem;
+  margin: 1rem;
+  
   background-color: white;
 
 }
 
 /*Last Banner*/
-
+.lastbannerh1{
+  display: flex;
+  justify-content: center;
+  margin: 
+}
 .lastbanner {
   display: flex;
   justify-content: center;

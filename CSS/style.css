@@ -69,7 +69,30 @@ header{
   }
 
   /*Top Banner*/
+
+  .largedescription {    
+    display: flex;
+    align-items: center;     
+    margin-top: 32px;    
+  }
+
+  .smallimages1{
+    display: flex;
+    align-items: center;
+    width: 60%;  
+  }
+
+  .smallimages1 img{
+    display: flex;
+    align-items: center;
+    width: 100%;  
+  }  
+  .smalltext1 {
+    width: 40%;
+    text-align: left;
     
+  }  
+
   .topbanner {
     display: flex;
     justify-content: center;
@@ -80,7 +103,8 @@ header{
   .banner {
     width: 60%;
     margin: 2rem 1.5rem 2rem 1.5rem;
-    display: block;
+    display: table-cell;
+    vertical-align: middle;    
   }
  
   .banner img {
@@ -91,6 +115,7 @@ header{
 
   .description {    
     display: block;
+    
     width: 40%;
     height: 40%;
     text-align: left;

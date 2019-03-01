@@ -123,6 +123,7 @@ header{
 
 /*Second Banner*/
 
+
 .secondbanner {
   display: flex;
   justify-content: center;
@@ -133,6 +134,10 @@ header{
   display: block;
   width: 40%;  
 }
+
+/*.secondbanner .smalldescriptions:nth-child(1){
+  background-color: #D8D8D8;
+}*/
 
 .smalldescription {    
   display: flex;
@@ -166,7 +171,13 @@ header{
 .thirdbanner {
   background-color: #D8D8D8;
   width: 100%;
+
 }
+
+.thirdbanner h1 {
+  text-align: center;
+}
+
 
 .container {
   justify-content: center;
@@ -176,13 +187,16 @@ header{
   
 }
 
+
+
 .middleimages {
   display: flex;
   flex-direction: column;
   max-width: 30%;
   flex-basis: 100%;
   flex: 1;
-  padding-right: 2rem;
+  margin-right: 2rem;
+  background-color: white;
 
 }
 
@@ -192,6 +206,11 @@ header{
   display: flex;
   justify-content: center;
   width: 100%;  
+  background-color: white;
+}
+
+.lastbanner .smalldescription:nth-child(1){
+  background-color: #D8D8D8;
 }
 
 /*Footer*/

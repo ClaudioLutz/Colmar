@@ -3,6 +3,8 @@ html{
     margin-top:0;
     padding-top:0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1400px;
+    margin: auto;
 
 
 }
@@ -15,6 +17,7 @@ h1{
 h2{
 font-weight: bold;
 font-size: 2rem;
+margin-top: 0;
 }
 
 
@@ -45,14 +48,7 @@ header{
     padding-bottom: 0.5rem;
     }
 
-.logo-nav{
-    display: flex;
-    align-items: center;
-    position:fixed;
-    background-color: white;
-    width: 100%;
-    height: 50px;
-  }
+
   
 .logo{
     display: flex;
@@ -78,6 +74,7 @@ header{
     display: flex;
     align-items: center;
     background-color: #D8D8D8;
+    width: 100%;
   }
 
 
@@ -93,7 +90,7 @@ header{
   }
   
   .banner img {
-    max-width: 100%;
+    width: 100%;
   }
 
   .largetext {
@@ -167,9 +164,10 @@ header{
 }
 
 .smalltext {
+  display: inline-block;
   width: 65%;
-  text-align: left;
   margin-left: 2rem;
+  margin: inherit;
     
 }
 
@@ -193,7 +191,7 @@ header{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;  
-  
+  padding-bottom: 2rem;
 }
 
 
@@ -230,6 +228,7 @@ header{
 
 /*Footer*/
 
-footer a{
-  align-self: flex-end;
+footer{
+  display: flex;
+  justify-content: center;  
 }

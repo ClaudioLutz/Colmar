@@ -2,24 +2,26 @@
 html{
     margin-top:0;
     padding-top:0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 h1{
   font-weight: bold;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
-h3 {
-  font-weight: bold;
+h2{
+font-weight: bold;
 }
+
 
 /*div {
     border: 1px solid red;
 }*/
 
 body {
-  min-width: 780px;
+  
  }
 
 
@@ -72,37 +74,13 @@ header{
 
   .largedescription {    
     display: flex;
-    align-items: center;     
-    margin-top: 32px;    
-  }
-
-  .smallimages1{
-    display: flex;
     align-items: center;
-    width: 60%;  
-  }
-
-  .smallimages1 img{
-    display: flex;
-    align-items: center;
-    width: 100%;  
-  }  
-  .smalltext1 {
-    width: 40%;
-    text-align: left;
-    
-  }  
-
-  .topbanner {
-    display: flex;
-    justify-content: center;
-    width: 100%;
     background-color: #D8D8D8;
   }
-  
+
   .banner {
     width: 60%;
-    margin: 2rem 1.5rem 2rem 1.5rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
     display: table-cell;
     vertical-align: middle;    
   }
@@ -112,6 +90,20 @@ header{
     display: flex;
     flex: 1;
   }
+
+  .largetext {
+    text-align: left;
+    width: 40%;
+  }  
+
+
+  .largebutton{
+    background-color: #4A4A4A;
+    color: #D8D8D8;
+    padding: 0.5rem 6rem;
+
+  }
+
 
   .description {    
     display: block;
@@ -168,9 +160,6 @@ header{
   
 }
 
-.banner{
- 
-}
 
 /*Third Banner*/
 

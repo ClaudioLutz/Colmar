@@ -159,7 +159,7 @@ header{
 .logo{
     display: flex;
     flex-grow: 1;
-    align-content: center;
+    
    
     }
   
@@ -176,6 +176,10 @@ header{
   }
 
   /*Top Banner*/
+
+  .mobile img{
+    display: none;
+  }
 
   .largedescription {    
     display: flex;
@@ -242,6 +246,9 @@ header{
 
 /*Second Banner*/
 
+.mobile{
+  display: none;
+}
 
 .secondbanner {
   display: flex;
@@ -263,12 +270,6 @@ header{
   vertical-align: middle;
 }
 
-
-
-/*.secondbanner .smalldescriptions:nth-child(1){
-  background-color: #D8D8D8;
-}*/
-
 .smalldescription {    
   display: flex;
   align-items: center; 
@@ -286,16 +287,14 @@ header{
 
 .smallimages img{
   display: flex;
-  width: 100%;  
-  
+  width: 100%;    
 }
 
 .smalltext {
   display: inline-block;
   width: 65%;
   margin-left: 2rem;
-  margin: inherit;
-    
+  margin: inherit;    
 }
 
 
@@ -304,7 +303,6 @@ header{
 .thirdbanner {
   background-color: #D8D8D8;
   width: 100%;
-
 }
 
 .thirdbanner h1 {
@@ -373,6 +371,10 @@ footer{
   #campus{
     display: flex;
   }
+  .banner img{
+    margin-left: 1rem;
+    width: 95%;
+  }
   #online{
     display: flex;
   }
@@ -380,13 +382,13 @@ footer{
     display: flex;
   }
   .logo{
-    
+    justify-content: space-around;    
+  }
+  .logo img{
+    padding: 0;
   }
   a{
     padding-right: 0;
-  }
-  .largedescription{
-    display: inline;
   }
   .logo h3{
     display:none;
@@ -394,9 +396,16 @@ footer{
   header nav {
     display:none;
   }
+  .largedescription{
+    display: inline;
+    background-color: #ffffff;
+  }     
+  .mobile{
+    display: flex;
+  }
   #largetext{
     width: 100%;
-    margin: 0 auto;
+    margin-left: 1rem;
   }
   .largetext h1{
     font-size: 2rem;
@@ -406,8 +415,9 @@ footer{
     text-align: center;
   }
   #button1{
-    width: 100%;
+    width: 95%;
     margin-bottom: 2rem;
+    padding: 1rem 0;
   }
   #bannerleft{
     display: none;
@@ -423,7 +433,10 @@ footer{
     display: none;
   }
   .middleimages h2{
-    padding: 2rem;
+    padding: 2rem 0 2rem 0;
+    margin-left: 1rem;
+    
+    width: 95%;
     background-color: #D8D8D8;
   }
   .container {

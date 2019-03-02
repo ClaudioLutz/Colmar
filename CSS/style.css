@@ -1,10 +1,4 @@
-/* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
-*/
+
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -105,8 +99,9 @@ html{
     margin-top:0;
     padding-top:0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: auto;
+    width: 100%;
 
 
 }
@@ -114,6 +109,8 @@ html{
 h1{
   font-weight: bold;
   font-size: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 h2{
@@ -133,7 +130,15 @@ body {
 
 
 /*Header*/
-
+#campus{
+  display: none;
+}
+#online{
+  display: none;
+}
+#login{
+  display: none;
+}
 header{
     display: flex;
     align-items: center;
@@ -154,6 +159,7 @@ header{
 .logo{
     display: flex;
     flex-grow: 1;
+    align-content: center;
    
     }
   
@@ -191,20 +197,31 @@ header{
     width: 100%;
   }
 
-  .largetext {
-    
+  #largetext {    
     text-align: left;
     width: 40%;
+    min-width: 340px;
+    margin-left: auto;
+    margin-right: 4rem;
+   }  
+   #largetext h1{
+     padding-top: 0px;
+     padding-bottom: 2rem;
+   }
 
-  }  
+   #largetext h2{
+     margin-bottom: 2rem;
+   }
 
-
-  .button1{
+  #button1{
     background-color: #4A4A4A;
-    color: #D8D8D8;
-    padding: 0.5rem 6rem;
-
-  }
+    color: #D8D8D8;    
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+  
+    }
 
 
   .description {    
@@ -239,6 +256,15 @@ header{
   vertical-align: middle;
 }
 
+#bannerleft {
+  width: 60%;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+
 /*.secondbanner .smalldescriptions:nth-child(1){
   background-color: #D8D8D8;
 }*/
@@ -247,12 +273,13 @@ header{
   display: flex;
   align-items: center; 
   margin: 0 2rem 1rem 1rem;
+  width: 100%;
 }
 
 .smallimages{
   display: flex;
   align-items: center;
-  width: 35%;  
+  min-width: 150px;  
   
   background-size: cover;
 }
@@ -310,6 +337,13 @@ header{
 }
 
 /*Last Banner*/
+#descriptionlastbanner{
+  width: 40%;
+  margin: 2rem 1.5rem 2rem 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .lastbannerh1{
   display: flex;
   justify-content: center;
@@ -335,24 +369,110 @@ footer{
 
 /*Media Queries*/
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 690px) {
+  #campus{
+    display: flex;
+  }
+  #online{
+    display: flex;
+  }
+  #login{
+    display: flex;
+  }
+  .logo{
+    
+  }
+  a{
+    padding-right: 0;
+  }
   .largedescription{
     display: inline;
   }
   .logo h3{
     display:none;
   }
-
   header nav {
     display:none;
   }
-  .largetext{
+  #largetext{
     width: 100%;
+    margin: 0 auto;
   }
   .largetext h1{
     font-size: 2rem;
+    text-align: center;
   }
-  .button1{
+  .largetext h2{
+    text-align: center;
+  }
+  #button1{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #bannerleft{
+    display: none;
+  }
+  .smalldescriptions{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .middleimages img{
+    display: none;
+  }
+  .middleimages h4{
+    display: none;
+  }
+  .middleimages h2{
+    padding: 2rem;
+    background-color: #D8D8D8;
+  }
+  .container {
+    justify-content: center;
+    display: block;
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: #ffffff
+  }
+  .thirdbanner{
+    background-color: #ffffff;    
+  }
+  .middleimages{
+    background-color: #D8D8D8;
+    display: initial;
     width: 100%;
   }
+  #descriptionlastbanner{
+    display: none;
+  }
+  #lastleftdescription{
+    display: none;
+  }
+  .lastbanner{
+    background-size: cover;
+  }
+  .lastbanner video{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  footer a{
+    display: none;
+  }
+
+
+  }
+ /* .lastbanner .smalldescription{
+    display:none;
+  }*/
+ /* .banner h1{
+    display: none;
+  }
+  .banner h4{
+    display: none;
+  }
+  .banner{
+    width: 100%;
+  }*/
 }

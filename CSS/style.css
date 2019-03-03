@@ -272,10 +272,10 @@ a{
 
 }
 
-.smalldescriptions{
+#smalldescriptions{
   width: 40%;  
   min-width: 40%;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
 }
 
@@ -288,7 +288,7 @@ a{
 .smalldescription {    
   display: flex;
   align-items: center; 
-  margin: 1rem 0rem 1rem 0rem;
+  margin: 0 0 1rem 0;
   width: 100%;
 }
 
@@ -350,6 +350,13 @@ a{
 }
 
 /*Last Banner*/
+.lastbannerleft {
+  width: 60%;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  display: table-cell;
+  vertical-align: middle;    
+}
+
 #descriptionlastbanner{
   width: 40%;
   margin: 2rem 1.5rem 2rem 0;
@@ -362,14 +369,14 @@ a{
   justify-content: center;
   margin: 
 }
-.lastbanner {
+#lastbanner {
   display: flex;
   justify-content: center;
   width: 100%;  
   background-color: white;
 }
 
-.lastbanner .smalldescription:nth-child(1){
+#lastbanner .smalldescription:nth-child(1){
   background-color: #D8D8D8;
 }
 
@@ -434,12 +441,15 @@ footer{
   .desktop{
     display: none;
   }
-  .smalldescription{
+  #secondbanner{
     display: block;    
   }
-  .smalldescriptions{
+  #smalldescriptions{
     width: 100%;
-    margin: 0 auto;
+    display: inline-block;
+  }
+  .smalldescription{
+    display: block;
   }
   .middleimages img{
     display: none;

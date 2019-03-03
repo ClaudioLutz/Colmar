@@ -188,7 +188,11 @@ header{
     width: 100%;
   }
 
+  #topbannerleft {
 
+    margin: 2rem 1.5rem 2rem 1.5rem;
+  
+  }
   .banner {
     width: 60%;
     margin: 2rem 1.5rem 2rem 1.5rem;
@@ -199,14 +203,17 @@ header{
   
   .banner img {
     width: 100%;
+    overflow: hidden;
+    min-width: 100%;
   }
 
   #largetext {    
     text-align: left;
     width: 40%;
-    min-width: 340px;
-    margin-left: auto;
-    margin-right: 4rem;
+    min-width: 40%;
+    flex-grow: 0.5;
+    
+    
   }  
   #largetext h1{
     padding-top: 0px;
@@ -258,16 +265,14 @@ header{
 
 .smalldescriptions{
   width: 40%;  
-  margin: 2rem 1.5rem 2rem 0;
-  display: table-cell;
-  vertical-align: middle;
+  min-width: 40%;
+
 }
 
-#bannerleft {
-  width: 60%;
+#secondbannerleft {
+
   margin: 2rem 1.5rem 2rem 1.5rem;
-  display: table-cell;
-  vertical-align: middle;
+
 }
 
 .smalldescription {    
@@ -419,7 +424,7 @@ footer{
     margin-bottom: 2rem;
     padding: 1rem 0;
   }
-  #bannerleft{
+  #secondbannerleft{
     display: none;
   }
   .desktop{

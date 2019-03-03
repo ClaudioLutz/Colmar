@@ -1,4 +1,4 @@
-
+/*Reset Stylesheet*/
 
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -207,15 +207,15 @@ header{
     min-width: 340px;
     margin-left: auto;
     margin-right: 4rem;
-   }  
-   #largetext h1{
-     padding-top: 0px;
-     padding-bottom: 2rem;
-   }
+  }  
+  #largetext h1{
+    padding-top: 0px;
+    padding-bottom: 2rem;
+  }
 
-   #largetext h2{
-     margin-bottom: 2rem;
-   }
+  #largetext h2{
+    margin-bottom: 2rem;
+  }
 
   #button1{
     background-color: #4A4A4A;

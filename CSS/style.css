@@ -259,13 +259,13 @@ header{
 
 #secondbanner {
   display: flex;
-  justify-content: center;
-  width: 100%;  
+
 }
 
 .smalldescriptions{
   width: 40%;  
   min-width: 40%;
+  margin-top: 1rem;
 
 }
 
@@ -278,7 +278,7 @@ header{
 .smalldescription {    
   display: flex;
   align-items: center; 
-  margin: 0 2rem 1rem 1rem;
+  margin: 1rem 0rem 1rem 0rem;
   width: 100%;
 }
 

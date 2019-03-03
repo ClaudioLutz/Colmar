@@ -310,7 +310,9 @@ a{
   width: 65%;
   margin-left: 1rem;  
 }
-
+.grey-bg{
+  background-color: #D8D8D8;
+}
 
 /*Third Banner*/
 
@@ -333,20 +335,32 @@ a{
   padding-bottom: 2rem;
 }
 
-
+.middleimages img {
+  height: auto;
+}
 
 .middleimages {
   display: flex;
   flex-direction: column;
-  
-  max-width: 30%;
-  flex-basis: 100%;
-  flex: 1;
-  margin: 1rem;
-  
+  width: 28%;
+  margin: 1rem;  
   background-color: white;
-
+  height: auto;
 }
+.middleimages  h2{
+  padding: 1rem 0 1rem 1rem  
+}
+.middleh4{
+  line-height: 0rem;
+}
+.middleimages h4{
+  padding: 0.5rem 0 0 1rem;
+  line-height: 1.5rem;  
+}
+.height24px{
+  height: 1.5rem;
+}
+
 
 /*Last Banner*/
 .lastbannerleft {
@@ -449,12 +463,20 @@ footer{
   #secondbanner{
     display: block;    
   }
+  .grey-bg{
+    display: none;
+  }
   #smalldescriptions{
     width: 100%;
     display: inline-block;
   }
   .smalldescription{
     display: block;
+    background: none;
+  }
+  
+  .smallimages img {
+    height: 80%;    
   }
   .middleimages img{
     display: none;
@@ -468,6 +490,9 @@ footer{
     
     width: 95%;
     background-color: #D8D8D8;
+  }
+  .height24px{
+    display: none;
   }
   .container {
     justify-content: center;

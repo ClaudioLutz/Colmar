@@ -90,7 +90,6 @@ hr {
     margin:1em 0;
     padding:0;
 }
-
 input, select {
     vertical-align:middle;
 }
@@ -110,7 +109,7 @@ h1{
   font-weight: bold;
   font-size: 2.5rem;
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 h2{
@@ -119,6 +118,18 @@ font-size: 1.2rem;
 margin-top: 0;
 }
 
+h3{
+
+}
+
+h4{
+  font-weight:normal;
+  padding: 1rem 0;
+}
+
+h5{
+  margin: 2rem 0;
+}
 
 /*div {
     border: 1px solid red;
@@ -159,8 +170,6 @@ header{
 .logo{
     display: flex;
     flex-grow: 1;
-    
-   
     }
   
 .logo img {
@@ -170,7 +179,7 @@ header{
     padding-top: 1rem;
   }
   
- a{
+a{
     padding-right: 20px;
     color: black;
   }
@@ -188,11 +197,11 @@ header{
     width: 100%;
   }
 
-  #topbannerleft {
+  /*#topbannerleft {
 
     margin: 2rem 1.5rem 2rem 1.5rem;
   
-  }
+  }*/
   .banner {
     width: 60%;
     margin: 2rem 1.5rem 2rem 1.5rem;
@@ -231,7 +240,8 @@ header{
     text-decoration: none;
     display: block;
     font-size: 1rem;
-  
+    width: 95%;
+    padding: 1rem 0;
     }
 
 
@@ -271,7 +281,7 @@ header{
 
 #secondbannerleft {
 
-  margin: 2rem 1.5rem 2rem 1.5rem;
+  margin: 2rem 1.5rem ;
 
 }
 
@@ -376,10 +386,7 @@ footer{
   #campus{
     display: flex;
   }
-  .banner img{
-    margin-left: 1rem;
-    width: 95%;
-  }
+  
   #online{
     display: flex;
   }
@@ -405,20 +412,17 @@ footer{
     display: inline;
     background-color: #ffffff;
   }     
+  #topbannerleft{
+    margin-left: 1rem;
+  }
   .mobile{
     display: flex;
+    margin-left: 1rem;
   }
   #largetext{
     width: 100%;
     margin-left: 1rem;
-  }
-  .largetext h1{
-    font-size: 2rem;
-    text-align: center;
-  }
-  .largetext h2{
-    text-align: center;
-  }
+  } 
   #button1{
     width: 95%;
     margin-bottom: 2rem;
@@ -429,6 +433,9 @@ footer{
   }
   .desktop{
     display: none;
+  }
+  .smalldescription{
+    display: block;    
   }
   .smalldescriptions{
     width: 100%;

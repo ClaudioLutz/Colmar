@@ -136,6 +136,10 @@ h5{
   margin: 2rem 0;
 }
 
+a.button{
+  padding: 1rem;
+}
+
 /*div {
     border: 1px solid red;
 }*/
@@ -146,6 +150,7 @@ body {
 
 
 /*Header*/
+
 #campus{
   display: none;
 }
@@ -156,38 +161,50 @@ body {
   display: none;
 }
 header{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 64px;
-    background-color: white;
-    font-family: Verdana;
-    font-size: 14px;
-    font-weight: bold;
-  }
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events:none;
+}
   
   header h3{
-    margin-top: 1.7rem;
-    }
+  margin-top: 1.7rem;
+  }
 
 
   
 .logo{
-    display: flex;
-    flex-grow: 1;
-    }
-  
+  display: flex;
+  flex-grow: 1;
+  }
+
 .logo img {
-    width: auto;
-    height: 50px;
-    padding-left: 1.5rem;
-    padding-top: 1rem;
+  width: auto;
+  height: 50px;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
   }
   
 a{
-    padding-right: 20px;
-    color: black;
-  }
+  color: black;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
+}
+
+a:hover{
+  color: #D8D8D8;
+  background-color: #4A4A4A;
+  
+}
 
   /*Top Banner*/
 
@@ -245,12 +262,25 @@ a{
   color: #D8D8D8;    
   text-align: center;
   text-decoration: none;
+  border:3px solid #4A4A4A;
   display: block;
   font-size: 1rem;
   width: 95%;
   padding: 1rem 0;
-  }
+  border-radius: 1rem;
+}
 
+#button1:hover{
+  background-color: #D8D8D8;
+  color: #4A4A4A;
+  font-weight: bold;
+  border-radius: 1rem;
+  border:3px solid #4A4A4A;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
 
 .description {    
   display: block;
@@ -322,6 +352,15 @@ a{
   width: 65%;
 
 }
+
+.smalltext h2{
+  margin-left: 1rem;
+}
+.smalltext h4{
+  margin-left: 1rem;
+}
+
+
 .grey-bg{
   display: flex;
   background-color: #D8D8D8;
@@ -353,6 +392,10 @@ a{
   height: 60%;
 }
 
+.middleimages a:hover{
+  font-weight: bold;
+}
+
 .middleimages {
   display: flex;
   flex-direction: column;
@@ -360,8 +403,8 @@ a{
   background-color: white;
   height: auto;
 }
-.middleimages  h2{
-  padding: 1rem 0 1rem 1rem  
+.middleimages h2{
+  padding: 1rem 0 1rem 0.7rem;
 }
 .middleh4{
   line-height: 0rem;
@@ -409,7 +452,22 @@ a{
 
 footer{
   display: flex;
-  justify-content: center;  
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+
+}
+#copyright{
+  display: flex;
+  position: relative;
+  float: left;
+}
+
+#footerlinks{
+  display: flex;
+  position: relative;
+  float: right;
 }
 
 /*Media Queries*/
@@ -418,7 +476,9 @@ footer{
   #campus{
     display: flex;
   }
-  
+  header {
+    pointer-events: all;
+  }
   #online{
     display: flex;
   }
@@ -432,7 +492,7 @@ footer{
     padding: 0;
   }
   a{
-    padding-right: 0;
+    padding: 0;
   }
   .logo h3{
     display:none;
@@ -440,6 +500,7 @@ footer{
   header nav {
     display:none;
   }
+
   #topbanner{
     display: inline;
     background-color: #ffffff;
@@ -454,7 +515,6 @@ footer{
   }
   #topbannerleft{
     display: flex;
-    margin-left: 0;
   }
   .mobile{
     display: flex;
@@ -531,6 +591,9 @@ footer{
     width: 90%;
     background-color: #D8D8D8;
   }
+  .middleimages h2:hover{
+    background-color:#4A4A4A;
+  }
   .height24px{
     display: none;
   }
@@ -555,14 +618,13 @@ footer{
   #lastleftdescription{
     display: none;
   }
-  .lastbanner{
-    background-size: cover;
+  #lastbanner{
+    justify-content: flex-start;
   }
-  .lastbanner video{
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
+  #lastbanner video{
+    width: 165%;
+    
+
   }
   footer a{
     display: none;

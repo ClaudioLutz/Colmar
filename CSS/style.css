@@ -129,6 +129,7 @@ h4{
   font-weight:normal;
   padding: 1rem 0;
   font-size: 0.8rem;
+  line-height: 1.5em;
 }
 
 h5{
@@ -275,7 +276,6 @@ a{
 
 #secondbanner {
   display: flex;
-
 }
 
 #smalldescriptions{
@@ -290,7 +290,7 @@ a{
 
 #secondbannerleft {
 
-  margin: 2rem 1.5rem ;
+  margin: 2rem 1.5rem 0 1.5rem;
 
 }
 
@@ -458,12 +458,24 @@ footer{
     display: flex;
     margin-left: 1rem;
     width:96%;
+    padding-top: 4rem;
+  }
+  #secondbanner .mobile:nth-child(1) {
+    padding-top: 0;
   }
   #largetext{
     width: 100%;
     margin-left: 0;
+    margin-bottom: -4rem;
     background-color: #D8D8D8;
   } 
+  #largetext h1{
+    padding-top: 2rem;
+    padding-left: 1rem;
+  }
+  #largetext h2{
+    padding-left: 1rem;
+  }
   #button1{
     width: 100%;
     margin-bottom: 2rem;
@@ -490,6 +502,9 @@ footer{
     display: block;
     background: none;
   }
+  .smalldescription h2{
+    margin-top: 1rem;
+  }
   .smallimages {
     width:100%;
     margin: 0;
@@ -501,6 +516,7 @@ footer{
   .smalltext{
     margin-left: 2rem;
   }
+
   .middleimages img{
     display: none;
   }

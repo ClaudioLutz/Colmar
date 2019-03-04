@@ -104,6 +104,9 @@ html{
 
 
 }
+a{
+  text-decoration: none;
+}
 
 h1{
   font-weight: bold;
@@ -203,56 +206,58 @@ a{
     margin: 2rem 1.5rem 2rem 1.5rem;
   
   }*/
-  .banner {
-    width: 60%;
-    margin: 2rem 1.5rem 2rem 1.5rem;
-    display: table-cell;
-    vertical-align: middle;    
-  }
+.banner {
+  width: 60%;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+  display: table-cell;
+  vertical-align: middle;    
+}
 
+
+.banner img {
+  width: 100%;
+  overflow: hidden;
+  min-width: 100%;
+}
+
+#largetext {    
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 40%;
+  min-width: 40%;
+  flex-grow: 0.5;
   
-  .banner img {
-    width: 100%;
-    overflow: hidden;
-    min-width: 100%;
+  
+}  
+#largetext h1{
+  padding-top: 0px;
+  padding-bottom: 2rem;
+}
+
+#largetext h2{
+  margin-bottom: 2rem;
+}
+
+#button1{
+  background-color: #4A4A4A;
+  color: #D8D8D8;    
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+  width: 95%;
+  padding: 1rem 0;
   }
 
-  #largetext {    
-    text-align: left;
-    width: 40%;
-    min-width: 40%;
-    flex-grow: 0.5;
-    
-    
-  }  
-  #largetext h1{
-    padding-top: 0px;
-    padding-bottom: 2rem;
-  }
 
-  #largetext h2{
-    margin-bottom: 2rem;
-  }
-
-  #button1{
-    background-color: #4A4A4A;
-    color: #D8D8D8;    
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 1rem;
-    width: 95%;
-    padding: 1rem 0;
-    }
-
-
-  .description {    
-    display: block;
-    
-    width: 40%;
-    height: 40%;
-    text-align: left;
-    float: left;
+.description {    
+  display: block;
+  
+  width: 40%;
+  height: 40%;
+  text-align: left;
+  float: left;
 }
 
 .description a {
@@ -279,6 +284,9 @@ a{
   margin-top: 1rem;
 
 }
+#secondbanner .smalldescription:nth-child(3){
+  background-color: #D8D8D8;
+}
 
 #secondbannerleft {
 
@@ -297,7 +305,7 @@ a{
   display: flex;
   align-items: center;
   margin: 1rem ;
-  width: 60%;
+  width: 35%;
   background-size: cover;
 }
 
@@ -306,15 +314,16 @@ a{
   width: 100%;    
 }
 .desktop{
-  width: 80%;
+  width: 100%;
 }
 
 .smalltext {
   display: inline-block;
   width: 65%;
-  margin-left: -2rem;
+
 }
 .grey-bg{
+  display: flex;
   background-color: #D8D8D8;
 }
 
@@ -439,12 +448,11 @@ footer{
     background-color: #ffffff;
   }     
   .banner img{
-    width: 96%;
-    min-width: 96%;
+    width: 100%;
   }
   #topbannerleft{
     display: flex;
-    margin-left: 1rem;
+    margin-left: 0;
   }
   .mobile{
     display: flex;
@@ -453,7 +461,7 @@ footer{
   }
   #largetext{
     width: 100%;
-    margin-left: 1rem;
+    margin-left: 0;
     background-color: #D8D8D8;
   } 
   #button1{
@@ -470,9 +478,10 @@ footer{
   #secondbanner{
     display: block;    
   }
-  .grey-bg{
-    display: none;
+  #secondbanner .smalldescription:nth-child(3){
+    background-color: white;
   }
+
   #smalldescriptions{
     width: 100%;
     display: inline-block;
@@ -481,9 +490,16 @@ footer{
     display: block;
     background: none;
   }
-  
+  .smallimages {
+    width:100%;
+    margin: 0;
+  }
   .smallimages img {
-    height: 80%;    
+    height: 80%; 
+    width: 96%;
+  }
+  .smalltext{
+    margin-left: 2rem;
   }
   .middleimages img{
     display: none;
@@ -492,10 +508,10 @@ footer{
     display: none;
   }
   .middleimages h2{
-    padding: 2rem 0 2rem 0;
+    padding: 1rem 0 1.5rem 0;
     margin-left: 1rem;
-    
-    width: 95%;
+    padding-left: 1rem;
+    width: 88%;
     background-color: #D8D8D8;
   }
   .height24px{

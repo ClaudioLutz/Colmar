@@ -148,20 +148,25 @@ a.button {
 }*/
 
 body {
-  
- }
+  width: 100%;
+}
 
 
 /*Header*/
 
 #campus{
   display: none;
+  pointer-events:none;
 }
 #online{
   display: none;
+  pointer-events:none;
+
 }
 #login{
   display: none;
+  pointer-events:none;
+
 }
 header{
   display: flex;
@@ -172,18 +177,13 @@ header{
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  pointer-events:none;
 }
-  
-  header h3{
-  margin-top: 1.7rem;
-  }
-
-
   
 .logo{
   display: flex;
   flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
   }
 
 .logo img {
@@ -314,20 +314,14 @@ a:hover{
 #smalldescriptions{
   width: 40%;  
   min-width: 40%;
-  margin-top: 1rem;
-
 }
-/*#secondbanner .smalldescription:nth-child(3){
-  background-color: #D8D8D8;
-}*/
+
 #secondbanner .smalldescription:hover{
   background-color: #D8D8D8;
 }
 
 #secondbannerleft {
-
   margin: 2rem 1.5rem 0 1.5rem;
-
 }
 
 .smalldescription {    
@@ -335,6 +329,7 @@ a:hover{
   align-items: center; 
   border: 1px solid #4A4A4A;
   width: 100%;
+  height: 33%;
 }
 
 .smallimages{
@@ -368,10 +363,6 @@ a:hover{
 }
 
 
-.grey-bg{
-  display: flex;
-  background-color: #D8D8D8;
-}
 
 /*Third Banner*/
 
@@ -482,17 +473,20 @@ footer{
 /*Media Queries*/
 
 @media only screen and (max-width: 590px) {
+  body{
+    width: 100%;
+  }
   #campus{
     display: flex;
-  }
-  header {
     pointer-events: all;
   }
   #online{
     display: flex;
+    pointer-events: all;
   }
   #login{
     display: flex;
+    pointer-events: all;
   }
   .logo{
     justify-content: space-around;    
@@ -550,7 +544,7 @@ footer{
   }
   #button1{
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     padding: 1rem 0;
   }
   #secondbannerleft{

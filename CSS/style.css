@@ -408,8 +408,8 @@ a{
 }
 
 .middleimages:hover{
-  width: 112%;
-  height: 105%;
+  width: 110%;
+  height: 110%;
   box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
   z-index: 1;
 }
@@ -496,10 +496,15 @@ footer{
     h2{
       font-size: 1rem;
     }
+    h4{
+      font-size: 70%;
+    }
     h4 a{
       font-size: 70%;
       padding: 0.1rem;
-
+    }
+    .banner h5{
+      font-size: 80%;
     }
     #largetext h1{
       width: 90%;

@@ -663,6 +663,7 @@ footer{
   }
   .smalltext h4 {
     font-size: 3vmax;
+    line-height: initial;
   }
   .smalltext h2 {
     font-size: 3.5vmax;

@@ -108,7 +108,7 @@ body{
 }
 a{
   text-decoration: none;
-  font-size: 1vmax;
+  font-size: 1.3vmax;
 }
 
 h1{
@@ -136,6 +136,7 @@ h4{
 
 h5{
   margin: 2rem 0;
+  font-size: 1vmax;
 }
 
 a.button{
@@ -320,8 +321,6 @@ a{
   display: flex;
   align-items: center; 
   border: 1px solid #D8D8D8;
-  width: 97%;
-  height: 33%;
 }
 
 .smallimages{
@@ -431,11 +430,11 @@ a{
 
 
 /*Last Banner*/
+
 .lastbannerleft {
     width: 60%;
-    margin: 2rem 1.5rem 2rem 0;
-    display: table-cell;
-    vertical-align: middle;    
+    padding: 2rem 1.5rem;
+
 }
 
 #descriptionlastbanner{
@@ -508,9 +507,6 @@ footer{
     h4 a{
       padding: 0.1rem;
     }
-    .banner h5{
-      font-size: 80%;
-    }
     .largetext h2{
         font-size: 4vmax;
         
@@ -530,7 +526,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 720px) {
   html{
     width: 100%;
   }
@@ -676,8 +672,6 @@ footer{
   .smalltext h4 {
     font-size: 3vmax;
     line-height: initial;
-    border: #4A4A4A solid 2px;
-    border-radius: 1rem;
     
     background-color: #D8D8D8;
     -webkit-border-radius: 1rem  ;

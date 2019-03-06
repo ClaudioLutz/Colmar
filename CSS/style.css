@@ -711,6 +711,7 @@ footer{
     display: none;
   }
   #lastbanner{
+    display: block;
     justify-content: flex-start;
   }
   #lastbanner video{

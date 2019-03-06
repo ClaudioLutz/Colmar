@@ -486,7 +486,7 @@ footer{
 
 }
 #copyright{
-  width: 90%;
+  width: 88%;
   padding-left: 1.5rem;
   
 
@@ -507,6 +507,7 @@ footer{
     }
     h4 a{
       padding: 0.1rem;
+      line-height: 1.5;
     }
     .largetext h2{
         font-size: 4vmax;

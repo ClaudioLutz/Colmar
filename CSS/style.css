@@ -619,6 +619,7 @@ footer{
     background-color: #D8D8D8;
   } 
   #largetext h1{
+    width: 90%;
     padding-top: 2rem;
     padding-left: 1rem;
   }
@@ -675,7 +676,15 @@ footer{
   .smalltext h4 {
     font-size: 3vmax;
     line-height: initial;
-  }
+    border: #4A4A4A solid 2px;
+    border-radius: 1rem;
+    
+    background-color: #D8D8D8;
+    -webkit-border-radius: 1rem  ;
+    -moz-border-radius: 1rem  ;
+    -ms-border-radius: 1rem  ;
+    -o-border-radius: 1rem  ;
+}
   .smalltext h2 {
     font-size: 3.5vmax;
   }

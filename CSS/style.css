@@ -223,7 +223,6 @@ a{
   width: 60%;
   margin: 2rem 1.5rem 2rem 1.5rem;
   display: table-cell;
-  vertical-align: middle;    
 }
 
 
@@ -414,6 +413,7 @@ a{
 
 .middleimages h2{
     padding: 1rem 0 1rem 0.7rem;
+    font-size: 2vmax;
 }
 .middleh4{
     line-height: 0rem;
@@ -674,9 +674,12 @@ footer{
   .container {
     justify-content: center;
     display: block;
-    width: 100%;
+    width: 100vmax;
     padding: 0 1rem 1rem 1rem;
     background-color: #ffffff
+  }
+  .container h2 {
+    font-size: 99%;
   }
   .thirdbanner{
     background-color: #ffffff;    
@@ -696,7 +699,7 @@ footer{
     justify-content: flex-start;
   }
   #lastbanner video{
-    width: 165%;
+    width: 100vmax;
     
 
   }

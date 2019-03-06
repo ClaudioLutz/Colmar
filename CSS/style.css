@@ -229,7 +229,7 @@ a{
 .banner img {
   width: 100%;
   overflow: hidden;
-  min-width: 100%;
+  
 }
 
 #largetext {    
@@ -305,6 +305,7 @@ a{
 #smalldescriptions{
   width: 40%;  
   min-width: 40%;
+  margin-top: 1rem;
 }
 
 #secondbanner .smalldescription:hover{
@@ -394,6 +395,9 @@ a{
 .middleimages img {
     height: 58%;    
 }
+.middleimages a{
+  font-size: 3.5vmin;
+}
 
 .middleimages a:hover{
     font-weight: bold;
@@ -443,6 +447,10 @@ a{
 #descriptionlastbanner .smalltext{
     margin-left: -1rem;
 }
+
+#descriptionlastbanner .smalldescription .smallimages img{
+  width: 100%;
+}
 .lastbannerh1{
     display: flex;
     justify-content: center;
@@ -452,7 +460,12 @@ a{
     display: flex;
     justify-content: center;
     width: 100%;  
-    background-color: white;
+    background-color: white;    
+}
+#descriptionlastbanner .smalltext a:hover{
+  color: #000000;
+  background-color: #4A4A4A;
+  padding: 0;
 }
 
 #lastbanner .smalldescription:nth-child(1){
@@ -549,7 +562,7 @@ footer{
     padding: 0;
   }
   header{
-    width: 100vmax;
+    width: 100%;
   }
   a{
     padding: 0;
@@ -568,11 +581,11 @@ footer{
   }     
   .banner{
     display: block;
-    width: 100vmax;
+    width: 100%;
     margin: auto;
   }
   .banner img{
-    width: 100vmax;
+    width: 95%;
   }
   #topbannerleft{
     display: flex;
@@ -587,7 +600,7 @@ footer{
     padding-top: 0;
   }
   #largetext{
-    width: 100vmax;
+    width: 100%;
     display: block;
     margin-left: 0;
     margin-bottom: -4rem;
@@ -605,7 +618,7 @@ footer{
     font-size: 3.5vmax;
   }
   #button1{
-    width: 100%;
+    width: 98%;
     margin-bottom: 4rem;
     padding: 1rem 0;
     font-size: 2vmax;
@@ -619,8 +632,9 @@ footer{
   #secondbanner{
     display: block;    
   }
-  #secondbanner .smalldescription:nth-child(3){
+  #secondbanner .smalldescription{
     background-color: white;
+    width: 100%;
   }
 
   #smalldescriptions{
@@ -638,13 +652,14 @@ footer{
   .smallimages {
     width:100%;
     margin: 0;
+    
   }
   .smallimages img {
-    width: 97vmax; 
+    width: 95%; 
   }
   .smalltext{
     margin-left: 2rem;
-    width: 97vmax;
+    width: 80%;
   }
   .smalltext h4 {
     font-size: 3vmax;
@@ -674,7 +689,7 @@ footer{
   .container {
     justify-content: center;
     display: block;
-    width: 100vmax;
+    width: 100%;
     padding: 0 1rem 1rem 1rem;
     background-color: #ffffff
   }

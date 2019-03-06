@@ -543,30 +543,42 @@ footer{
   h2{
     font-size: 2vmax;
   }
+  a{
+    padding: 0;
+    font-size: 3vmax;
+  }
+  #companylogo{
+    width: 150%;
+  }
   #campus{
     display: flex;
     pointer-events: all;
+    width: 150%;
+
+ 
   }
   #online{
     display: flex;
     pointer-events: all;
+    width: 150%;
+
   }
   #login{
     display: flex;
     pointer-events: all;
+    width: 150%;
+
   }
   .logo{
-    justify-content: space-around;    
+    justify-content: space-around;   
   }
+
   .logo img{
     padding: 0;
   }
   header{
     width: 100%;
-  }
-  a{
-    padding: 0;
-    font-size: 3vmax;
+    justify-content: center;
   }
   .logo h3{
     display:none;
@@ -585,7 +597,7 @@ footer{
     margin: auto;
   }
   .banner img{
-    width: 95%;
+    width: 100%;
   }
   #topbannerleft{
     display: flex;
@@ -615,13 +627,12 @@ footer{
     font-size: 6vmin;
   }
   #largetext a{
-    font-size: 3.5vmax;
+    font-size: 3vmax;
   }
   #button1{
     width: 98%;
     margin-bottom: 4rem;
-    padding: 1rem 0;
-    font-size: 2vmax;
+    padding: 1rem 0;    
   }
   #secondbannerleft{
     display: none;

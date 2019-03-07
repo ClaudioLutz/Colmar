@@ -1,20 +1,12 @@
 /*General*/
 html{
-  margin-top:0;
-  padding-top:0;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: auto;
   width: 100%;
 }
+
 body{
-  position: absolute;
-  align-items: center;
   width: 100%;
   left: 0vmax;
-}
-a{
-  font-size: 1.3vmax;
-  text-decoration: none;
 }
 
 h1{
@@ -43,20 +35,18 @@ h5{
   margin: 2rem 0;
   font-size: 1vmax;
 }
-a.button{
-  padding: 0.25rem 1rem 0 1rem;      
-}
-a:hover{
+a{
+  color: black;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  font-size: 1.3vmax;
   text-decoration: none;
-  color: #D8D8D8;
-  background-color: #4A4A4A;
-  border-radius: 1rem;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;  
+  -webkit-border-radius: 0.2rem;
+  -moz-border-radius: 0.2rem;
+  -ms-border-radius: 0.2rem;
+  -o-border-radius: 0.2rem;
 }
-span{
-  white-space: nowrap;
-}
+
 
 /*Header*/
 #campus{
@@ -76,31 +66,21 @@ header{
   align-items: center;
   width: 100%;
   height: 64px;
-  background-color: white;
-  font-size: 14px;
   font-weight: bold;
 }  
 .logo{
   display: flex;
   flex-grow: 1;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: center;  
   pointer-events: none;
 }
+
 .logo img {
   width: 3vmax;
   padding-left: 1.5rem;
-  padding-top: 1rem;
+  padding-top: 1rem;  
 }
-a{
-  color: black;
-  padding: 0.3rem;
-  border-radius: 0.2rem;
-  -webkit-border-radius: 0.2rem;
-  -moz-border-radius: 0.2rem;
-  -ms-border-radius: 0.2rem;
-  -o-border-radius: 0.2rem;
-}
+
   /*Top Banner*/
 
 .mobile img{
@@ -120,16 +100,11 @@ a{
   display: table-cell;
 }
 
-
 .banner img {
   width: 100%;
-  overflow: hidden;
-  
 }
 
 #largetext {    
-  display: flex;
-  flex-wrap: wrap;
   text-align: left;
   width: 0%;
   min-width: 40%;
@@ -171,22 +146,6 @@ a{
   -o-border-radius: 1rem;
 }
 
-.description {    
-  display: block;
-    
-  width: 40%;
-  height: 40%;
-  text-align: left;
-  float: left;
-}
-
-.description a {
-  background-color: #4A4A4A;
-  padding: 0.5rem 8rem 0.5rem 8rem;
-  color: #D8D8D8;
-
-}
-
 /*Second Banner*/
 
 .mobile{
@@ -196,11 +155,18 @@ a{
 #secondbanner {
   display: flex;
 }
-
+#secondbannerleft {
+  margin: 2rem 1.5rem 0 1.5rem;
+}
 #smalldescriptions{
   width: 40%;  
   min-width: 40%;
   margin-top: 1rem;
+}
+.smalldescription {    
+  display: flex;
+  align-items: center; 
+  border: 1px solid #D8D8D8;
 }
 
 #secondbanner .smalldescription:nth-child(3){
@@ -211,16 +177,6 @@ a{
 }
 #secondbanner .smalldescription:hover{
   background-color: #D8D8D8;
-}
-
-#secondbannerleft {
-  margin: 2rem 1.5rem 0 1.5rem;
-}
-
-.smalldescription {    
-  display: flex;
-  align-items: center; 
-  border: 1px solid #D8D8D8;
 }
 
 .smallimages{
@@ -235,15 +191,12 @@ a{
   display: flex;
   width: 100%;    
 }
-.desktop{
-  width: 100%;
-}
+
 
 .smalltext {
   display: inline-block;
   width: 65%;
-  margin-left: -0.5rem;
-
+  margin-left: -1rem;
 }
 
 .smalltext h2{
@@ -252,7 +205,17 @@ a{
 .smalltext h4{
   margin: 0.25rem 1rem;
 }
-
+a.button{
+  padding: 0.25rem 1rem 0 1rem;      
+}
+a:hover{
+  text-decoration: none;
+  color: #D8D8D8;
+  background-color: #4A4A4A;
+  border-radius: 1rem;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;  
+}
 
 
 /*Third Banner*/
@@ -261,13 +224,10 @@ a{
   background-color: #D8D8D8;
   width: 100%;
 }
-
 .thirdbanner h1 {
   text-align: center;
   padding-top: 2rem;
 }
-
-
 .container {
   display: grid;
   justify-content: center;
@@ -279,8 +239,6 @@ a{
 .middleimages {
   flex-direction: column;
   background-color: white;
-  overflow: hidden; 
-  text-overflow: ellipsis;
   transition: ease-in-out;
   -webkit-transition: ease-in-out;
   -moz-transition: ease-in-out;
@@ -290,24 +248,11 @@ a{
 .courses{
   margin-bottom: 1.5rem;
   margin-left: 1rem;
+  padding-top: 0.25rem;
 }
+
 .middleimages img {
   width: 100%;
-
-}
-.middleimages a{
-  font-size: 1.3vmax;
-}
-
-.middleimages a:hover{
-  background: #4A4A4A;
-  font-weight: bold;
-  border-radius: 1rem;
-  font-size: 120%;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
 }
 
 .middleimages:hover{
@@ -317,6 +262,12 @@ a{
   z-index: 1;
 }
 
+.middleimages a:hover{
+  background: #4A4A4A;
+  font-weight: bold;
+  border-radius: 1rem;
+  font-size: 120%;
+}
 .middleimages h2{
   padding: 1rem 0 0.25rem 1rem;
   font-size: 2vmax;
@@ -327,18 +278,30 @@ a{
   background-color:#fff;
   width: 0%;
 }
-
-
-.middleh4 {
+.middleh2 {
   padding: 0.25rem 0 0.25rem 1rem;
 }
 
+
 /*Last Banner*/
+.lastbannerh1{
+  display: flex;
+  justify-content: center;
+  margin: 
+  }
+
+#lastbanner {
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+  background-color: white;    
+}
 
 .lastbannerleft {
   width: 60%;
   padding: 2rem 1.5rem 0 1.5rem;
 }
+
 .lastbannerleft h2{
   margin-top: 1.5rem;
   padding-bottom: 0.25rem;
@@ -352,27 +315,11 @@ a{
 #descriptionlastbanner{
   width: 40%;
   margin: 2rem 0 2rem 0;
-  display: table-cell;
-  vertical-align: middle;
 }
 #descriptionlastbanner .smalltext{
   margin-left: -1rem;
 }
 
-#descriptionlastbanner .smalldescription .smallimages img{
-  width: 100%;
-}
-.lastbannerh1{
-  display: flex;
-  justify-content: center;
-  margin: 
-  }
-#lastbanner {
-  display: flex;
-  justify-content: center;
-  width: 100%;  
-  background-color: white;    
-}
 #descriptionlastbanner .smalltext a:hover{
 color: #000000;
 background-color: #4A4A4A;
@@ -396,42 +343,16 @@ h3 #lastleftdescription{
 footer{
   display: flex;
   justify-content: space-between;
-
   width: 100%;
   height: 64px;
   margin-top: 1rem;
-
 }
+
 #copyright{
-
   padding-left: 1.5rem;
-  
-
 }
 
 /*Media Queries*/
-@media only screen and (max-width: 850px) {
-  
-
-  h4 a{
-    padding: 0.1rem;
-    line-height: 1.5;
-  }
-  .largetext h2{
-      font-size: 4vmax;
-      
-  }
-
-}
-
-@media only screen and (max-width: 760px) {
-  .middleimages h2{
-    font-size: 80%;
-  }
-  .middleimages h4{
-    font-size: 60%;
-  }
-}
 
 
 @media only screen and (max-width: 720px) {
@@ -442,9 +363,12 @@ footer{
     width: 100%;
   }
   h1{
-    font-size: 2rem;
+    font-size: 7vmax;
   }
   h2{
+    font-size: 2vmax;
+  }
+  h4{
     font-size: 2vmax;
   }
   a{
@@ -590,7 +514,7 @@ footer{
   .smalltext h2 {
     font-size: 3.5vmax;
   }
-  .middleh4{
+  .middleh2{
     display: none;
   }
   .middleimages img{
@@ -609,6 +533,7 @@ footer{
   }
   .middleimages h2:hover{
     background-color:#4A4A4A;
+    color: #D8D8D8
   }
   .height24px{
     display: none;
@@ -620,8 +545,11 @@ footer{
     padding: 0 1rem 1rem 1rem;
     background-color: #ffffff
   }
+  .courses{
+    display: none;
+  }
   .container h2 {
-    font-size: 2.5vmax;
+    font-size: 4.5vmax;
   }
   .thirdbanner{
     background-color: #ffffff;    
@@ -641,31 +569,24 @@ footer{
     display: block;
     justify-content: flex-start;
   }
-  #lastbanner video{
+  video{
+    margin: 0 ;
+    margin-bottom: 2rem;
+    padding: 0;
     width: 100%;
-    
   }
-
   .lastbannerleft{
+    padding: 0;
     width: 100%;
   }
-
+  .lastbannerh1{
+    padding-top: 3.5rem;
+    margin-bottom: 1rem;
+  }
   footer a{
     display: none;
   }
+  footer {
+    padding: 1rem 0;
+  }
 
-
-  }
-/* .lastbanner .smalldescription{
-    display:none;
-  }*/
-/* .banner h1{
-    display: none;
-  }
-  .banner h4{
-    display: none;
-  }
-  .banner{
-    width: 100%;
-  }*/
-}

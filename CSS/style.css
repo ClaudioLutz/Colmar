@@ -155,18 +155,11 @@ header{
 #secondbanner {
   display: flex;
 }
-#secondbannerleft {
-  margin: 2rem 1.5rem 0 1.5rem;
-}
+
 #smalldescriptions{
   width: 40%;  
   min-width: 40%;
   margin-top: 1rem;
-}
-.smalldescription {    
-  display: flex;
-  align-items: center; 
-  border: 1px solid #D8D8D8;
 }
 
 #secondbanner .smalldescription:nth-child(3){
@@ -177,6 +170,16 @@ header{
 }
 #secondbanner .smalldescription:hover{
   background-color: #D8D8D8;
+}
+
+#secondbannerleft {
+  margin: 2rem 1.5rem 0 1.5rem;
+}
+
+.smalldescription {    
+  display: flex;
+  align-items: center; 
+  border: 1px solid #D8D8D8;
 }
 
 .smallimages{
@@ -191,12 +194,15 @@ header{
   display: flex;
   width: 100%;    
 }
-
+.desktop{
+  width: 100%;
+}
 
 .smalltext {
   display: inline-block;
   width: 65%;
-  margin-left: -1rem;
+  margin-left: -0.5rem;
+
 }
 
 .smalltext h2{
@@ -204,17 +210,6 @@ header{
 }
 .smalltext h4{
   margin: 0.25rem 1rem;
-}
-a.button{
-  padding: 0.25rem 1rem 0 1rem;      
-}
-a:hover{
-  text-decoration: none;
-  color: #D8D8D8;
-  background-color: #4A4A4A;
-  border-radius: 1rem;
-  transition-duration: 200ms;
-  transition-timing-function: ease-in-out;  
 }
 
 

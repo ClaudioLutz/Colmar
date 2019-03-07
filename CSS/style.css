@@ -26,15 +26,16 @@ h1{
 
 h2{
   font-weight: bold;
-  font-size: 2.5vmin;
+  font-size: 2vmax;
   margin-top: 0;
 }
 h3{
   font-size: 2vmax;
+  padding: 0.25rem 0 0.25rem 0rem;
+  border-bottom: #4A4A4A solid 1px;
 }
 h4{
-  font-weight:normal;
-  line-height: 150%;
+  
   font-size: 1.3vmax;
   
 }
@@ -43,7 +44,7 @@ h5{
   font-size: 1vmax;
 }
 a.button{
-  padding: 0.3rem 1rem 0.3rem 1rem;      
+  padding: 0.25rem 1rem 0 1rem;      
 }
 a:hover{
   text-decoration: none;
@@ -159,8 +160,6 @@ a{
   transition-timing-function: ease-in-out;
 }
 #button1:hover{
-  width: 75%;
-  height: 120%;
   background-color: #D8D8D8;
   color: #4A4A4A;
   font-weight: bold;
@@ -204,6 +203,12 @@ a{
   margin-top: 1rem;
 }
 
+#secondbanner .smalldescription:nth-child(3){
+  background-color: #D8D8D8;
+}
+#secondbanner .smalldescription:nth-child(3):hover{
+  background-color: #fff;
+}
 #secondbanner .smalldescription:hover{
   background-color: #D8D8D8;
 }
@@ -242,11 +247,10 @@ a{
 }
 
 .smalltext h2{
-  margin-left: 1rem;
+  margin: 0.5rem 1rem 0.25rem 1rem;
 }
 .smalltext h4{
-  margin-left: 1rem;
-  margin-top: 0.5rem;
+  margin: 0.25rem 1rem;
 }
 
 
@@ -283,7 +287,10 @@ a{
   -ms-transition: ease-in-out;
   -o-transition: ease-in-out;
 }
-
+.courses{
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
 .middleimages img {
   width: 100%;
 
@@ -295,11 +302,12 @@ a{
 .middleimages a:hover{
   background: #4A4A4A;
   font-weight: bold;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
+  border-radius: 1rem;
+  font-size: 120%;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 
 .middleimages:hover{
@@ -310,29 +318,35 @@ a{
 }
 
 .middleimages h2{
-  padding: 1rem 0 1rem 0.7rem;
+  padding: 1rem 0 0.25rem 1rem;
   font-size: 2vmax;
+  background: #4A4A4A;
+  color: #D8D8D8;
 }
 .middleimages a h2:hover{
-  background-color:#4A4A4A;
-}
-.middleh4{
-  line-height: 0rem;
-  margin-bottom: -1rem;
-}
-.middleimages h4{
-  padding: 0 0 1.5rem 1rem;
-  line-height: 1.5rem;  
+  background-color:#fff;
+  width: 0%;
 }
 
 
+.middleh4 {
+  padding: 0.25rem 0 0.25rem 1rem;
+}
 
 /*Last Banner*/
 
 .lastbannerleft {
   width: 60%;
-  padding: 2rem 1.5rem;
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+.lastbannerleft h2{
+  margin-top: 1.5rem;
+  padding-bottom: 0.25rem;
+}
 
+.lastbannerleft h4{
+  padding-top: 0.25rem;
+  padding-bottom: 2rem;
 }
 
 #descriptionlastbanner{
@@ -374,6 +388,9 @@ padding: 0;
 #lastbanner .smalldescription:nth-child(2):hover{
   background-color: #D8D8D8;
 }
+h3 #lastleftdescription{
+  margin: 1.5rem, 0 0.25rem 1rem;
+}
 /*Footer*/
 
 footer{
@@ -382,6 +399,7 @@ footer{
 
   width: 100%;
   height: 64px;
+  margin-top: 1rem;
 
 }
 #copyright{
@@ -391,18 +409,10 @@ footer{
 
 }
 
-#footerlinks{
-    
-}
-
-
-
 /*Media Queries*/
 @media only screen and (max-width: 850px) {
-  }
-  h2{
-    font-size: 1.8vmin;
-  }
+  
+
   h4 a{
     padding: 0.1rem;
     line-height: 1.5;
@@ -411,9 +421,7 @@ footer{
       font-size: 4vmax;
       
   }
-  .smalltext h2{
-    font-size: 2vmax;
-  }
+
 }
 
 @media only screen and (max-width: 760px) {
@@ -572,8 +580,7 @@ footer{
   }
   .smalltext h4 {
     font-size: 3vmax;
-    line-height: initial;
-    
+    line-height: initial;    
     background-color: #D8D8D8;
     -webkit-border-radius: 1rem  ;
     -moz-border-radius: 1rem  ;
@@ -582,6 +589,9 @@ footer{
 }
   .smalltext h2 {
     font-size: 3.5vmax;
+  }
+  .middleh4{
+    display: none;
   }
   .middleimages img{
     display: none;
@@ -595,6 +605,7 @@ footer{
     width: 90%;
     background-color: #D8D8D8;
     font-size: 6vmax;
+    color: #4A4A4A;
   }
   .middleimages h2:hover{
     background-color:#4A4A4A;

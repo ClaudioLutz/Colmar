@@ -354,7 +354,7 @@ footer{
   padding-left: 1.5rem;
 }
 
-/*Media Queries*/
+/*Media Query*/
 
 
 @media only screen and (max-width: 720px) {
@@ -535,6 +535,9 @@ footer{
   .middleimages h2:hover{
     background-color:#4A4A4A;
     color: #D8D8D8
+  }
+  .button{
+    margin-left: 1rem;
   }
   .height24px{
     display: none;

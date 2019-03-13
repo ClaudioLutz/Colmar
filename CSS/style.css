@@ -21,20 +21,22 @@ h2{
   font-size: 2vmax;
   margin-top: 0;
 }
+
 h3{
   font-size: 2vmax;
   padding: 0.25rem 0 0.25rem 0rem;
   border-bottom: #4A4A4A solid 1px;
 }
-h4{
-  
-  font-size: 1.3vmax;
-  
+
+h4{  
+  font-size: 1.3vmax;  
 }
+
 h5{
   margin: 2rem 0;
   font-size: 1vmax;
 }
+
 a{
   color: black;
   padding: 0.3rem;
@@ -46,7 +48,6 @@ a{
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
 }
-
 
 /*Header*/
 #campus{
@@ -72,7 +73,6 @@ header{
   display: flex;
   flex-grow: 1;
   align-items: center;  
-  pointer-events: none;
 }
 
 .logo img {
@@ -202,7 +202,6 @@ header{
   display: inline-block;
   width: 65%;
   margin-left: -0.5rem;
-
 }
 
 .smalltext h2{
@@ -212,6 +211,9 @@ header{
   margin: 0.25rem 1rem;
 }
 
+.button{
+  margin-left: 0.7rem;
+}
 
 /*Third Banner*/
 
@@ -259,9 +261,14 @@ header{
 
 .middleimages a:hover{
   background: #4A4A4A;
+  color: #D8D8D8;
   font-weight: bold;
   border-radius: 1rem;
   font-size: 120%;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .middleimages h2{
   padding: 1rem 0 0.25rem 1rem;
@@ -391,7 +398,6 @@ footer{
   .logo{
     justify-content: space-around;   
   }
-
   .logo img{
     padding: 0;
   }
@@ -584,4 +590,3 @@ footer{
   footer {
     padding: 1rem 0;
   }
-
